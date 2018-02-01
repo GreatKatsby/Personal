@@ -1,0 +1,29 @@
+<html>
+	<body>
+		@{
+			<form method="post" action="">
+				First Name: <br />
+				<input type="text" name="first" value=""><br /><br />
+				Last Name: <br />
+				<input type="text" name="last" value=""><br /><br />
+				
+				Email: <br />
+				<input type="email" name mail value=""><br /><br />
+				
+				<input type="submit" value="Submit" />
+			</form>
+			
+			if(IsPost){
+				var first = Request["first"];
+				var last = Request["last"];
+				
+				var email = Request["mail"];
+				
+				<p>First Name: @first<br />
+					Last Name: @last<br />
+					
+					Email: @email </p>
+			}
+		}
+	</body>
+</html>
